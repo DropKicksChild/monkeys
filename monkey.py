@@ -27,7 +27,7 @@ def monkeys():
 
         formatNumber = ("{:,}".format(genWords))
         if lf in bob:
-            print(f'the monkeys finally wrote {lf}, and they typed {formatNumber} before getting here')
+            print(f'the monkeys finally wrote {lf}, and they typed {formatNumber} words before getting here')
             typing = False
 
 
