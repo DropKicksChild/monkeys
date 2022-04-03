@@ -4,7 +4,8 @@ import threading
 
 characters = list(string.ascii_letters)
 genWords = 0
-lf = input('enter: ')
+island = input('enter: ')
+lf = island.lower()
 
 def monkeys():
 
