@@ -25,21 +25,12 @@ def monkeys():
         genWords += 1
         #print(f'{genWords}: {bob}')
 
+        formatNumber = ("{:,}".format(genWords))
         if lf in bob:
-            print(f'the monkeys finally wrote {lf}, and they typed {genWords} before getting here')
+            print(f'the monkeys finally wrote {lf}, and they typed {formatNumber} before getting here')
             typing = False
 
 
-threads = []
-for i in range(50):
-    t = threading.Thread(target=monkeys())
-    t.daemon = True
-    threads.append(t)
 
-for i in range(50):
-    threads[i].start()
-
-for i in range(50):
-    threads[i].join()
 
 monkeys()
